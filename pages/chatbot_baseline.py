@@ -55,7 +55,7 @@ vectorstore_path = "./document"
 st.session_state["retriever"] = faiss_retriever(vectorstore_path)
 
 # 기본 RAG prompt
-loaded_prompt = load_prompt("./prompts/basic.yaml", encoding="utf8")
+loaded_prompt = load_prompt("./prompt/basic.yaml", encoding="utf8")
 
 prompt_template = loaded_prompt.template
 prompt = PromptTemplate.from_template(prompt_template)
