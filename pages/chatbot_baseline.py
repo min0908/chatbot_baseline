@@ -63,7 +63,7 @@ chain = create_chain(
     prompt,
     st.session_state["retriever"],
     temperature=0.5,
-    model_name="gpt-4o",
+    model_name="gpt-4o-mini",
 )
 st.session_state["chain"] = chain
 
